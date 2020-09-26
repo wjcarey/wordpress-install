@@ -1,2 +1,4 @@
 # wordpress-install-script
-install the latest version of WordPress to a path of your choice
+
+### Run this code below to run the script. The script will late ask you where to install wordpress.
+`sudo curl -o wordpress-install.sh https://raw.githubusercontent.com/wjcarey/wordpress-install-script/master/wordpress-install.sh && sudo chmod 777 wordpress-install.sh && sudo ./wordpress-install.sh`
