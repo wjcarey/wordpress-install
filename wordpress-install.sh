@@ -15,7 +15,7 @@ if [ "$CONFIRM_INSTALL_LOCATION" != "${CONFIRM_INSTALL_LOCATION#[Yy]}" ] ;then
     chown -R  www-data:www-data ${INSTALL_PATH}
     echo "Success: Wordpress installed ..."
 else
-    echo "Error: the WordPress installer was skipped ..."
+    echo "Notice: the WordPress installer was skipped ..."
 fi
 
 rm -- "$0"
