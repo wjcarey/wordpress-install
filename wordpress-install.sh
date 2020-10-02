@@ -13,7 +13,7 @@ if [ "$CONFIRM_INSTALL_LOCATION" != "${CONFIRM_INSTALL_LOCATION#[Yy]}" ] ;then
     rm -R ${INSTALL_PATH}/wordpress ${INSTALL_PATH}/latest.zip
     chmod 775 -R ${INSTALL_PATH}
     chown -R  www-data:www-data ${INSTALL_PATH}
-    echo "success: Wordpress installed ..."
+    echo "success: wordpress installed ..."
 else
     echo "notice: the wordpress installer was skipped by user..."
 fi
