@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 if [ -z "$1" ]
     then
         echo -e "\e[32menter the full path for your wordpress installation ..."
