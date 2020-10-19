@@ -3,15 +3,15 @@
 if [ -z "$1" ]
     then
         echo -e "\e[32menter the full path for your wordpress installation ..."
-        read USER_PATH
+        read INSTALL_PATH
         echo -e "\e[32mconfirm  wordpress installation in ${INSTALL_PATH}, Do you want to continue? [Y/n]"
         read CONFIRM_INSTALL_LOCATION
     else
-    USER_PATH=${1}
+    INSTALL_PATH=${1}
     CONFIRM_INSTALL_LOCATION="y"
 fi
 
-INSTALL_PATH=$(realpath -s --canonicalize-missing $USER_PATH)
+INSTALL_PATH=$(realpath -s --canonicalize-missing $INSTALL_PATH)
 
 if [ "$CONFIRM_INSTALL_LOCATION" != "${CONFIRM_INSTALL_LOCATION#[Yy]}" ] ;then
     rm ${INSTALL_PATH}/index.html
