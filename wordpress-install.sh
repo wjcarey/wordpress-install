@@ -2,9 +2,9 @@
 
 if [ -z "$1" ]
     then
-        echo -e "\e[32menter the full path for your wordpress installation ..."
+        echo -e "\e[32menter the full path for your wordpress installation ... \e[39m"
         read INSTALL_PATH
-        echo -e "\e[32mconfirm  wordpress installation in ${INSTALL_PATH}, Do you want to continue? [Y/n]"
+        echo -e "\e[32mconfirm  wordpress installation in ${INSTALL_PATH}, Do you want to continue? [Y/n] \e[39m"
         read CONFIRM_INSTALL_LOCATION
     else
     INSTALL_PATH=${1}
