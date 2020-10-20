@@ -22,7 +22,7 @@ if [ "$CONFIRM_INSTALL_LOCATION" != "${CONFIRM_INSTALL_LOCATION#[Yy]}" ] ;then
     chmod 775 -R ${INSTALL_PATH}
     chown -R  www-data:www-data ${INSTALL_PATH}
     echo "updating apache2 default virtual host for directory ${INSTALL_PATH} ..."
-    sed -i "s#/var/www/html#${NEW_INSTALL_PATH}#" /etc/apache2/sites-available/000-default.conf
+    sed -i "s#/var/www/html#${INSTALL_PATH}#" /etc/apache2/sites-available/000-default.conf
     echo "restarting apache2 ..."
     systemctl restart apache2
     echo "success: wordpress installed ..."
